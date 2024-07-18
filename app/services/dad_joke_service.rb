@@ -7,7 +7,9 @@ class DadJokeService
   private
 
   def self.call_api
-    response = conn.get
+    response = conn.get do |request|
+      request.headers['Content-Type'] = 'application/json'
+    end
     JSON.parse(response.body, symbolize_names: true)
   rescue Faraday::Error => e
     { error: e.message }
