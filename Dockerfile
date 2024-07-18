@@ -4,6 +4,7 @@
 ARG RUBY_VERSION=3.2.2
 FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim as base
 
+RUN apt-get update -qq && apt-get install -y nodejs yarn postgresql-client
 # Rails app lives here
 WORKDIR /rails
 
@@ -34,7 +35,7 @@ COPY . .
 RUN bundle exec bootsnap precompile app/ lib/
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
+
 
 
 # Final stage for app image
