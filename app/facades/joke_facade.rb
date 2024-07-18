@@ -3,9 +3,7 @@ class JokeFacade
     format_joke
   end
 
-  private
-
-  def format_joke
+  def self.format_joke
     service_json = DadJokeService.generate_joke
 
     joke = service_json[:joke]
