@@ -31,6 +31,7 @@ gem "redis", ">= 4.0.1"
 
 gem "faraday"
 
+gem 'sass-rails', '~> 6.0'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -75,3 +76,5 @@ end
 
 
 gem "dockerfile-rails", ">= 1.6", :group => :development
+
+gem "terser", "~> 1.2"
