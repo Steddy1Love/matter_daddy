@@ -1,24 +1,53 @@
-# README
+# What's Matter Daddy?
+## I'm fantastic thanks for asking, how about you?
+### No but really what is it?
+Very simple joke pulling monolith application based in Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
+To get a local copy up and running, follow these simple steps.
 
-Things you may want to cover:
+## Prerequisites
+Ensure you have the following installed
+- Ruby 3.2.2+
+- Rails 7.0+
+- Node 16.0.0+
+- PostgreSQL 12+
 
-* Ruby version
+## Installation Steps
+## Clone the repo
+```sh
+git clone https://github.com/Steddy1Love/matter_daddy.git
+```
 
-* System dependencies
+## Navigate to the project directory
+```sh
+cd matter_daddy
+```
+## Install dependencies
+```sh
+bundle install
+```
 
-* Configuration
+## Usage
+To start using Matter Daddy, follow these steps:
 
-* Database creation
+```sh
+rails server
+```
 
-* Database initialization
+## Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-* How to run the test suite
+Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
+Distributed under the MIT License. See LICENSE for more information.
 
-* Deployment instructions
+## Contact
+Steddman Bell - [LinkedIn](https://www.linkedin.com/in/steddman-bell/)
 
-* ...
+## Live Link: https://matter-daddy-9fd4bf2bf80d.herokuapp.com/
